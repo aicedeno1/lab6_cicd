@@ -13,5 +13,5 @@ test('fibonacci de 0 debe ser 0', () => {
 });
 
 test('fibonacci de 7 debe ser 13', () => {
-  expect(fibonacci(7)).toBe(12);
+  expect(fibonacci(7)).toBe(13);
 });
