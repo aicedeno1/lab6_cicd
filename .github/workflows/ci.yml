@@ -56,7 +56,7 @@ jobs:
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCELTOKEN }}
 
       - name: Construir el proyecto
-        run: vercel --build --prod --token=${{ secrets.VERCELTOKEN }}
+        run: vercel build --prod --token=${{ secrets.VERCELTOKEN }}
 
       - name: Desplegar en produccion
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCELTOKEN }}
