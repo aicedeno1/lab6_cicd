@@ -4,6 +4,14 @@ const port = 3000;
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  const { nombre } = req.params;
+
+  res.status(200).json({
+    mensaje: 'Nueva version desplegada con vercel',
+  });
+});
+
 app.get('/saludo/:nombre', (req, res) => {
   const { nombre } = req.params;
 
